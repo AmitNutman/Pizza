@@ -1,3 +1,5 @@
+#https://github.com/AmitNutman/Pizza
+
 import  socket
 
 
@@ -9,7 +11,7 @@ server.listen()
 
 while True:
     client, addr = server.accept()
-    order = client.recv(4096).decode()
+    order = client.recv(1024).decode()
 
     print(order)
 
